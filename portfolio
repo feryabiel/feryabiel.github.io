@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Fery Abiel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Video</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    video {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Contact</h1>
-  <p>Animation.</p>
+  <h1>Portfolio Video</h1>
+  <p>Beberapa karya animasi dan video saya</p>
+
+  <video controls>
+    <source src="video1.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+  </video>
+
+  <video controls>
+    <source src="video2.mp4" type="video/mp4">
+  </video>
 </body>
 </html>
