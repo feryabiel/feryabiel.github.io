@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #bbb;
+      margin-bottom: 40px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    video, iframe {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    }
+
+    .caption {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Portfolio Video</h1>
+  <p>Kumpulan hasil karya video & animasi saya</p>
+
+  <div class="video-grid">
+    <!-- Video dari file lokal (upload ke GitHub) -->
+    <div>
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <div class="caption">Video 1 – Contoh animasi karakter</div>
+    </div>
+
+    <!-- Video dari YouTube (embed) -->
+    <div>
+      <iframe src="https://www.youtube.com/embed/ID_VIDEO" 
+              frameborder="0" allowfullscreen></iframe>
+      <div class="caption">Video 2 – Demo proyek di YouTube</div>
+    </div>
+
+    <!-- Tambah lagi jika mau -->
+    <div>
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+      <div class="caption">Video 3 – Motion Graphic Promo</div>
+    </div>
+  </div>
+</body>
+</html>
