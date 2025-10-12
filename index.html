@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>animation - feryabiel</title>
+    <link rel="stylesheet" href="/portfolio/assets/css/main.css">
+    <script src="https://kit.fontawesome.com/3f0c52eb19.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title" onclick="location.href='https://feryabiel.github.io/portfolio';">
+        <h1>feryabiel</h1>
+      </div>
+    </header>
+    <div class="gallery">
+      <div class="example" onclick="openModal();currentSlide(1)">
+        <video class="lazy content" data-src="thumbnails/sample1.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project One</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(2)">
+        <video class="lazy content" data-src="thumbnails/sample2.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Two</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(3)">
+        <video class="lazy content" data-src="thumbnails/sample3.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Three</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(4)">
+        <video class="lazy content" data-src="thumbnails/sample4.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project One</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(5)">
+        <video class="lazy content" data-src="thumbnails/sample5.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Two</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(6)">
+        <video class="lazy content" data-src="thumbnails/sample6.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Three</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(7)">
+        <video class="lazy content" data-src="thumbnails/sample7.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project One</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(8)">
+        <video class="lazy content" data-src="thumbnails/sample8.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Two</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(9)">
+        <video class="lazy content" data-src="thumbnails/sample9.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Three</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(10)">
+        <video class="lazy content" data-src="thumbnails/sample10.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Two</h4><p>Description here</p></div></div>
+      </div>
+      <div class="example" onclick="openModal();currentSlide(11)">
+        <video class="lazy content" data-src="thumbnails/sample11.mp4" autoplay loop muted></video>
+        <div class="exampleInfo"><div class="info1"><h4>Project Three</h4><p>Description here</p></div></div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample1.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample2.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample3.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample4.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample5.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample6.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample7.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample8.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample9.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample10.mp4" controls autoplay loop muted></video></div>
+        <div class="mySlides"><video class="lazy content" data-src="videos/sample11.mp4" controls autoplay loop muted></video></div>
+      </div>
+    </div>
+
+    <script>
+      var lazyLoadInstance = new LazyLoad();
+      function openModal(){document.getElementById('myModal').style.display='flex';}
+      function closeModal(){document.getElementById('myModal').style.display='none';}
+    </script>
+  </body>
+</html>
