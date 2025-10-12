@@ -1,4 +1,5 @@
-**# Horizontal-Swiper**
+# Horizontal-Swiper
+
 For Starting Screen
 
-# npm install**
+# npm install
